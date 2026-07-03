@@ -1,0 +1,51 @@
+{
+  "name": "@pdrittenhouse/vite-plugin-virtual-glob",
+  "version": "0.1.0",
+  "description": "Vite plugin that creates virtual modules from filesystem globs — solves the static-path limitation of import.meta.glob() when source paths are determined at runtime.",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "virtual-module",
+    "glob",
+    "import",
+    "dynamic-import",
+    "storybook"
+  ],
+  "homepage": "https://github.com/pdrittenhouse/vite-plugin-virtual-glob#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdrittenhouse/vite-plugin-virtual-glob"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run typecheck"
+  },
+  "peerDependencies": {
+    "vite": "^4.0.0 || ^5.0.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "glob": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vite": "^6.0.0"
+  }
+}
