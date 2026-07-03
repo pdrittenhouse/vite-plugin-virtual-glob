@@ -1,6 +1,6 @@
 {
   "name": "@pdrittenhouse/vite-plugin-virtual-glob",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vite plugin that creates virtual modules from filesystem globs — solves the static-path limitation of import.meta.glob() when source paths are determined at runtime.",
   "keywords": [
     "vite",
@@ -40,7 +40,7 @@
     "vite": "^4.0.0 || ^5.0.0 || ^6.0.0"
   },
   "dependencies": {
-    "glob": "^11.0.0"
+    "glob": "^13.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
