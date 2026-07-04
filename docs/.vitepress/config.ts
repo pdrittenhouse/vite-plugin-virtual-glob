@@ -10,8 +10,6 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: '/logo.svg',
-
     nav: [
       { text: 'Guide', link: '/guide/getting-started', activeMatch: '/guide/' },
       { text: 'API', link: '/api/', activeMatch: '/api/' },
