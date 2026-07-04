@@ -4,6 +4,6 @@ dist/
 .DS_Store
 .npmrc
 
-# Docusaurus
-docs/build/
-docs/.docusaurus/
+# VitePress
+docs/.vitepress/dist/
+docs/.vitepress/cache/
